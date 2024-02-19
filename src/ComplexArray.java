@@ -10,7 +10,7 @@ public class ComplexArray<T> extends Array<T> {
     @Override
     public void Print(){
         for(T element : elements){
-            System.out.println(element + " ");
+            System.out.print(element + " ");
         }
         System.out.println("Elements from derived class");
     }
@@ -27,7 +27,7 @@ public class ComplexArray<T> extends Array<T> {
     public void AddElement(T element){
         T[] newArr = Arrays.copyOf(elements,elements.length+1);
 
-        newArr[elements.length -1] = element;
+        newArr[elements.length] = element;
         elements = newArr;
     }
 
@@ -41,6 +41,21 @@ public class ComplexArray<T> extends Array<T> {
             System.out.println("Indexul specificat este invalid.");
         }
     }
+
+    @Override
+    public T GetByIndex(int index){
+
+        System.out.println("Method from derived class");
+        if (index >= 0 && index < elements.length) {
+            return elements[index];
+        }
+        return null;
+
+    }
+
+
+
+
 
 
 
