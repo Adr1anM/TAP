@@ -1,13 +1,17 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<>();
         numbers.add(2);
         numbers.add(2);
-        numbers.add(2);
-
-
+        numbers.add(4);
+        numbers.add(6);
+        numbers.add(7);
 
 
         try {
@@ -37,5 +41,10 @@ public class Main {
             System.out.println(e.getMessage());
             System.out.println("Nu există numere pentru sumare.");
         }
+
+
+
     }
+
+
 }
