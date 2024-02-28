@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
         Set<Integer> set = new HashSet<>();
-        ArythmProgression progresion = new ArythmProgression();
+        GeomProgression progresion = new GeomProgression();
 
         set.add(2);
         set.add(4);
@@ -20,7 +20,7 @@ public class Main {
             System.out.println("It doesn't have progresion arythm");
         }
 
-        ArythmProgression newprogression = new ArythmProgression(10,2);
+        GeomProgression newprogression = new GeomProgression(10,2);
 
         Set<Integer> newset = newprogression.GenerateProgrrSet(2);
 

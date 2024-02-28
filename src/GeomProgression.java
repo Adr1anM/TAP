@@ -2,16 +2,16 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ArythmProgression {
+public class GeomProgression {
 
     private final int size;
     private double ratio;
-    public ArythmProgression() {
+    public GeomProgression() {
         this.size = 0;
         this.ratio = 0;
     }
 
-    public ArythmProgression(int size , int qprogr){
+    public GeomProgression(int size , int qprogr){
         this.size = size;
         this.ratio = qprogr;
     }
@@ -36,15 +36,15 @@ public class ArythmProgression {
 
     public Set<Integer> GenerateProgrrSet(int firstelement){
 
-        Set<Integer> arythmProgressionSet = new HashSet<>();
-        arythmProgressionSet.add(firstelement);
+        Set<Integer> geomProgressionSet = new HashSet<>();
+        geomProgressionSet.add(firstelement);
 
         int currelem = firstelement;
             for(int i = 0 ; i < size; i++){
                 currelem*=ratio;
-                arythmProgressionSet.add(currelem);
+                geomProgressionSet.add(currelem);
             }
-        return arythmProgressionSet;
+        return geomProgressionSet;
     }
 
 }
