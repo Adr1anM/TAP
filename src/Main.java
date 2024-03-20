@@ -13,16 +13,16 @@ public class Main {
         set.add(16);
         set.add(32);
 
-        if (progresion.HasProgresion(set)) {
-            System.out.println("It has a progression arythm");
+        if (progresion.hasProgression(set)) {
+            System.out.println("It has a geometric progression");
 
         } else {
-            System.out.println("It doesn't have progresion arythm");
+            System.out.println("It doesn't have geometric progresion ");
         }
 
         GeomProgression newprogression = new GeomProgression(10,2);
 
-        Set<Integer> newset = newprogression.GenerateProgrrSet(2);
+        Set<Integer> newset = newprogression.generateProgressionSet(2);
 
         System.out.println(newset);
 
